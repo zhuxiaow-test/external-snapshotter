@@ -1,21 +1,21 @@
----
 version: 2
 updates:
 - package-ecosystem: gomod
-  directory: "/"
+  directory: /
   schedule:
     interval: daily
   labels:
-    - "area/dependency"
-    - "release-note-none"
-    - "ok-to-test"
+  - area/dependency
+  - release-note-none
+  - ok-to-test
   open-pull-requests-limit: 10
-- package-ecosystem: "github-actions"
-  directory: "/"
+- package-ecosystem: github-actions
+  directory: /
   schedule:
-      interval: "daily"
+    interval: daily
   labels:
-    - "area/dependency"
-    - "release-note-none"
-    - "ok-to-test"
+  - area/dependency
+  - release-note-none
+  - ok-to-test
   open-pull-requests-limit: 10
+- google3/cloud/kubernetes/security/automated_patching/tools/oss_scripting/repo_urls_sample.txt
